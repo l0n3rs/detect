@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+ <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+      <title>Document</title>
+      <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+
+     </head>
+
+ <body>
+  <div class="navbar-wrapper">
+       <div class="container-fluid">
+            <nav class="navbar navbar-inverse navbar-static-top">
+                 <div class="container">
+                      <div class="navbar-header">
+                           <a class="navbar-brand" href="#">图像识别系统</a>
+                          </div>
+                     </div>
+                </nav>
+           </div>
+      </div>
+  <div class="page-header">
+       <h1 class="col-sm-offset-1">资源上传</h1>
+      </div>
+  <div class="container">
+       <form action="/result" method="post" class="form-horizontal" enctype="multipart/form-data">
+            <div class="form-group">
+                 <label for="" class="col-sm-3 control-label">选择文件:</label>
+                <input  type="file" name="file" class="btn btn-primary btn-lg glyphicon glyphicon-plus">
+                 &nbsp;
+                 <label for="" control-label="">请选择文件，大小50M以内. 文件名无中文</label>
+                </div>
+           <button class="btn btn-primary col-sm-2 col-sm-offset-6 glyphicon glyphicon-plane" type="submit">上传</button>
+           </form>
+      </div>
+
+ </body>
+
+</html>
